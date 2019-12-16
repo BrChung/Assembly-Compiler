@@ -1,0 +1,73 @@
+Incoming Token: begin
+  <Statement> -> <Block Statement> 
+  <Block Statement> -> begin <Statement> <More Statements> end 
+Incoming Token: int
+  <Statement> -> <Declarative> 
+  <Declarative> -> <Type> <Identifier> <More IDs> 
+  <Type> -> int 
+Incoming Token: IDnum
+Incoming Token: ,
+  <More IDs> -> , <Identifier> <More IDs> 
+Incoming Token: IDnu2m
+Incoming Token: ,
+  <More IDs> -> , <Identifier> <More IDs> 
+Incoming Token: IDsum
+Incoming Token: ;
+  <More IDs> -> ε 
+  <More Statements> -> ; <Statement> <More Statements> 
+Incoming Token: IDnum
+  <Statement> -> <Assignment> 
+  <Assignment> -> <Identifier> = <Expression> 
+Incoming Token: =
+Incoming Token: INT0
+  <Expression> -> <Term> <Expression Prime> 
+  <Term> -> <Factor> <Term Prime> 
+  <Factor> -> INT 
+Incoming Token: ;
+  <Term Prime> -> ε 
+  <Expression Prime> -> ε 
+  <More Statements> -> ; <Statement> <More Statements> 
+Incoming Token: IDnu2m
+  <Statement> -> <Assignment> 
+  <Assignment> -> <Identifier> = <Expression> 
+Incoming Token: =
+Incoming Token: INT15
+  <Expression> -> <Term> <Expression Prime> 
+  <Term> -> <Factor> <Term Prime> 
+  <Factor> -> INT 
+Incoming Token: ;
+  <Term Prime> -> ε 
+  <Expression Prime> -> ε 
+  <More Statements> -> ; <Statement> <More Statements> 
+Incoming Token: IDsum
+  <Statement> -> <Assignment> 
+  <Assignment> -> <Identifier> = <Expression> 
+Incoming Token: =
+Incoming Token: INT0
+  <Expression> -> <Term> <Expression Prime> 
+  <Term> -> <Factor> <Term Prime> 
+  <Factor> -> INT 
+Incoming Token: ;
+  <Term Prime> -> ε 
+  <Expression Prime> -> ε 
+  <More Statements> -> ; <Statement> <More Statements> 
+Incoming Token: IDsum
+  <Statement> -> <Assignment> 
+  <Assignment> -> <Identifier> = <Expression> 
+Incoming Token: =
+Incoming Token: IDnum
+  <Expression> -> <Term> <Expression Prime> 
+  <Term> -> <Factor> <Term Prime> 
+  <Factor> -> <Identifier> 
+Incoming Token: +
+  <Term Prime> -> ε 
+  <Expression Prime> -> + <Term> <Expression Prime> 
+Incoming Token: IDnu2m
+  <Term> -> <Factor> <Term Prime> 
+  <Factor> -> <Identifier> 
+Incoming Token: end
+  <Term Prime> -> ε 
+  <Expression Prime> -> ε 
+  <More Statements> -> ε 
+Incoming Token: $
+Accepted! Code is Syntactically Correct!
